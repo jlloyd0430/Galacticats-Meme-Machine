@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
-      <h1 className="title">Galacticats Meme</h1>
+      <h1 className="title">Galactic Memes</h1>
       <div className="settings">
         <input
           type="number"
