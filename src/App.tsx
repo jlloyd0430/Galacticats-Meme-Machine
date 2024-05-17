@@ -80,6 +80,7 @@ function App() {
             border: "20px",
             padding: "10px",
             margin: "10px",
+            marginTop: 25px,
             display: "inline-block",
             borderRadius: "12px",
           }}
@@ -87,7 +88,7 @@ function App() {
           Download
         </button>
       </div>
-      <div>created by cats for cats</div>
+      <div className=creators >created by cats for cats</div>
     </div>
   );
 }
