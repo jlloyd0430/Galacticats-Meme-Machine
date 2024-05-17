@@ -88,7 +88,7 @@ function App() {
           Download
         </button>
       </div>
-      <div className=creators >created by cats for cats</div>
+      <div className="creators" >created by cats for cats</div>
     </div>
   );
 }
