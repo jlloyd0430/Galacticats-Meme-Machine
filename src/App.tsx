@@ -80,7 +80,7 @@ function App() {
             border: "20px",
             padding: "10px",
             margin: "10px",
-            marginTop: 25px,
+            marginTop: "25px",
             display: "inline-block",
             borderRadius: "12px",
           }}
