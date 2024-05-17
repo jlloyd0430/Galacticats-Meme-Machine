@@ -66,8 +66,8 @@ function App() {
           className="image-container"
           style={{
             border: "10px solid orange",
-            margin: "10px",
-            display: "inline-block",
+            margin: "auto",
+            display: "block",
             borderRadius: "12px",
           }}
         />
