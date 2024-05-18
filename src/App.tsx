@@ -37,7 +37,8 @@ function App() {
 
   return (
     <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
-      <h1 className="title">Galactic Memes</h1>
+      <h1 className="title">GC Customs</h1>
+      <div>press and hold the image to save or click download</div>
       <div className="settings">
         <input
           type="number"
@@ -52,7 +53,7 @@ function App() {
           onChange={handleChangeCategory}
         >
           <option value="gm">GM</option>
-          <option value="gun">Fud Gun</option>
+          <option value="gun">Fud Rifle</option>
           <option value="nova">Nova</option>
         </select>
         <button onClick={toggleDarkMode}>
@@ -89,6 +90,12 @@ function App() {
         </button>
       </div>
       <div className="creators" >created by cats for cats</div>
+       <div className="footer">
+        <a href="https://x.com/GalacticatsNFT" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
+        <a href="https://www.jpg.store/collection/galacticats?tab=items" target="_blank" rel="noopener noreferrer"><i className="fas fa-image"></i></a>
+        <a href="https://discord.gg/qKjymp53DB" target="_blank" rel="noopener noreferrer"><i className="fab fa-discord"></i></a>
+        <a href="https://galacticats.xyz" target="_blank" rel="noopener noreferrer"><i className="fas fa-globe"></i></a>
+      </div>
     </div>
   );
 }

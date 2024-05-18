@@ -4,6 +4,11 @@
 
 .title {
   padding-top: 20px;
+  font-family: 'Kaushan Script', cursive;
+    /* Set font family to Kaushan */
+    color: orange;
+    /* Set text color to solid orange */
+
 }
 
 .dark-mode {
@@ -41,4 +46,15 @@ img {
 
 .creators {
   margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.footer {
+  padding: 20px;
+}
+
+a {
+  padding: 15px;
+  color: orange;
+  
 }
