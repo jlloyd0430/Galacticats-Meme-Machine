@@ -32,6 +32,7 @@ function App() {
     <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
       <h1 className="title">GC Customs</h1>
       <div>press and hold the image to save or click download</div>
+        <div>Note: all Zombie/tatto furs will be updated shortly</div>
       <div className="settings">
         <input
           type="number"
