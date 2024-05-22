@@ -1,17 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
-import { useEffect } from "react";
-import NumberJson from "./number.json";
 
 function App() {
-  const [number, setNumber] = useState(0);
+  const [number, setNumber] = useState(1);
   const [category, setCategory] = useState("gm");
-  const [resultNumber, setResultNumber] = useState(0);
   const [darkMode, setDarkMode] = useState(false); // State for dark mode
-
-  useEffect(() => {
-    setResultNumber(NumberJson[number % NumberJson.length]);
-  }, [number]);
 
   const handleChangeNumber = (e: React.ChangeEvent<HTMLInputElement>) => {
     setNumber(parseInt(e.target.value)); // Ensure value is parsed as integer
@@ -22,7 +15,7 @@ function App() {
   };
 
   const handleDownload = () => {
-    const imageUrl = `https://galacticatsmeme.s3.us-east-2.amazonaws.com/${category}/${resultNumber}.png`;
+    const imageUrl = `https://galacticatsmeme.s3.us-east-2.amazonaws.com/${category}/${number}.png`;
     const anchor = document.createElement("a");
     anchor.href = imageUrl;
     anchor.download = "galacticats_meme.png";
@@ -62,7 +55,7 @@ function App() {
       </div>
       <div>
         <img
-          src={`https://galacticatsmeme.s3.us-east-2.amazonaws.com/${category}/${resultNumber}.png`}
+          src={`https://galacticatsmeme.s3.us-east-2.amazonaws.com/${category}/${number}.png`}
           alt="Galacticats Meme"
           className="image-container"
           style={{
